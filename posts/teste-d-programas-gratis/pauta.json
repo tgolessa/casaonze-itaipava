@@ -1,0 +1,8 @@
+{"editoria": "roteiro", "assunto": "Programas de graça em Itaipava",
+ "fontes": ["https://www.viciadaemviajar.com/o-que-fazer-em-itaipava-rj-melhores-dicas-e-roteiro-pronto"],
+ "slides": [
+  {"tipo": "capa", "chapeu": "Sem gastar nada", "titulo": "4 programas de graça em Itaipava", "subtitulo": "Para encaixar entre um almoço e outro"},
+  {"tipo": "lista", "titulo": "De <em>graça</em>", "itens": ["Parque Municipal de Itaipava: trilha, bike e parquinho, de quarta a domingo", "Cachoeira da Macumba: 35 metros e poços para banho, a 10 minutos de trilha", "Mirante do Cristo, na subida da serra", "Feirinha de Itaipava, de sexta a domingo"]},
+  {"tipo": "texto", "titulo": "Vale <em>saber</em>", "texto": "O Parque Municipal aceita cachorro e abre das 7h às 18h. A trilha da cachoeira não tem placa: a entrada fica ao lado de uma ponte branca na BR-495."},
+  {"tipo": "casa", "foto": "fotos/84c52380.jpg", "titulo": "E a piscina também é de graça", "texto": "Pelo menos para quem está hospedado na Casa Onze."}
+ ]}

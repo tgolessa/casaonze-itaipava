@@ -1,0 +1,10 @@
+{"editoria": "casa", "assunto": "Um sábado sem sair da Casa Onze",
+ "fontes": [],
+ "slides": [
+  {"tipo": "capa", "chapeu": "E se ninguém sair de casa?", "titulo": "Um sábado na Casa Onze", "subtitulo": "Casa para até 10 pessoas em Itaipava"},
+  {"tipo": "casa", "foto": "fotos/e57190e6.jpg", "titulo": "9h, café no deck", "texto": "Com a mata acordando em volta."},
+  {"tipo": "casa", "foto": "fotos/28dba650.jpg", "titulo": "13h, pizza no forno", "texto": "Cada um monta a sua."},
+  {"tipo": "casa", "foto": "fotos/8baedc19.jpg", "titulo": "16h, piscina", "texto": "Sem horário para sair."},
+  {"tipo": "casa", "foto": "fotos/IMG_3945.jpg", "titulo": "18h, pôr do sol na borda", "texto": "O melhor lugar da casa nessa hora."},
+  {"tipo": "casa", "foto": "fotos/IMG_2697.jpg", "titulo": "21h, mesa posta", "texto": "E ninguém olhando o relógio."}
+ ]}

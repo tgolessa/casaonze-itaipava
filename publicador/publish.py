@@ -111,6 +111,11 @@ def publish_post(post_dir):
             raise FileNotFoundError(f"vídeo não encontrado: {post_dir / video}")
         params = {"media_type": "REELS", "video_url": raw_url(post_dir, video),
                   "caption": caption, "share_to_feed": "true", **collab(meta)}
+        if meta.get("teste"):
+            # Reel de teste: aparece só para quem não segue o perfil. A decisão
+            # de levar para o feed é manual, depois de comparar os resultados.
+            params["trial_params"] = json.dumps({"graduation_strategy": "MANUAL"})
+            params.pop("share_to_feed")
         if meta.get("capa") and (post_dir / meta["capa"]).is_file():
             params["cover_url"] = raw_url(post_dir, meta["capa"])
         print(f"[{post_dir.name}] reel")
@@ -179,7 +184,7 @@ def publish_post(post_dir):
             meta["story_erro"] = str(e)
             print(f"[{post_dir.name}] story ERRO: {e}", file=sys.stderr)
 
-    notify(f"Publicado: {meta.get('titulo') or post_dir.name}",
+    notify(("Reel de teste publicado: " if meta.get("teste") else "Publicado: ") + (meta.get("titulo") or post_dir.name),
            (meta.get("legenda") or "").split("\n")[0][:180],
            click=meta.get("link"),
            image=raw_url(post_dir, (meta.get("imagens") or [meta.get("capa") or ""])[0]) if not meta.get("video") else None)

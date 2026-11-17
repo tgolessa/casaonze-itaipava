@@ -1,0 +1,8 @@
+{"editoria": "mesa", "assunto": "Bar do Horto, no Hortomercado de Itaipava",
+ "fontes": ["https://www.cnnbrasil.com.br/viagemegastronomia/gastronomia/restaurantes-petropolis-itaipava/", "https://www.viciadaemviajar.com/o-que-fazer-em-itaipava-rj-melhores-dicas-e-roteiro-pronto"],
+ "slides": [
+  {"tipo": "capa", "chapeu": "Programa de fim de tarde", "titulo": "Bar do Horto", "subtitulo": "Chope gelado e pastel feito na hora, no Hortomercado de Itaipava"},
+  {"tipo": "texto", "titulo": "Peça o <em>pastel</em>", "texto": "O de carne seca sai por volta de R$ 10. É balcão, mesa de feira e conversa alta. Não é lugar de jantar, é lugar de começar a noite."},
+  {"tipo": "servico", "titulo": "Para <em>ir</em>", "linhas": [["Onde", "Hortomercado de Itaipava, Estrada União e Indústria, 9.726"], ["O quê", "Chope, drinks, pastéis e petiscos"], ["Dica", "Chegue cedo no sábado, que lota"]]},
+  {"tipo": "casa", "foto": "fotos/37312B87.jpg", "titulo": "E para a saideira, a chopeira de casa", "texto": "A Casa Onze tem chopeira própria, piscina e área gourmet para até 10 pessoas."}
+ ]}

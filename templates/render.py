@@ -2,7 +2,8 @@
 Casa Onze — renderizador de carrosséis.
 
 Uso:
-    python templates/render.py posts/<pasta>/pauta.json
+    python templates/render.py posts/<pasta>/pauta.json          # carrossel 1080x1350
+    python templates/render.py posts/<pasta>/pauta.json --reel   # quadros 1080x1920 para Reel
 
 Lê o pauta.json, monta os slides em HTML com a identidade da Casa Onze
 e salva um JPEG 1080x1350 por slide em posts/<pasta>/imagens/.
@@ -58,8 +59,8 @@ def font_face():
 CSS = """
 :root{--creme:#F4EEE4;--tinta:#22201B;--musgo:#4C5240;--cor:__COR__;}
 *{box-sizing:border-box;margin:0;padding:0}
-body{width:1080px;height:1350px;background:var(--creme);}
-.slide{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--creme);color:var(--tinta);
+body{width:1080px;height:__H__px;background:var(--creme);}
+.slide{position:relative;width:1080px;height:__H__px;overflow:hidden;background:var(--creme);color:var(--tinta);
   font-family:'Manrope',sans-serif;padding:96px 96px 0 96px;display:flex;flex-direction:column}
 .topo{display:flex;justify-content:space-between;align-items:center;font-size:26px;letter-spacing:.18em;
   text-transform:uppercase;font-weight:700}
@@ -134,18 +135,21 @@ def slide_html(s, editoria, i, n):
     raise ValueError(f"tipo de slide desconhecido: {t}")
 
 
-def render(pauta_path):
+def render(pauta_path, reel=False):
     pauta_path = Path(pauta_path).resolve()
     p = json.loads(pauta_path.read_text(encoding="utf-8"))
     editoria = p["editoria"]
-    css = font_face() + CSS.replace("__COR__", CORES[editoria])
-    out = pauta_path.parent / "imagens"
+    H = 1920 if reel else 1350
+    css = font_face() + CSS.replace("__COR__", CORES[editoria]).replace("__H__", str(H))
+    if reel:
+        css += ".slide{padding-top:220px}.capa .chapeu{font-size:54px}.capa h1{font-size:150px}.rodape{bottom:300px}.casa .topo{padding-top:220px}.casa .baixo{bottom:420px}h2{font-size:100px}.texto{font-size:52px}ul.lista li{font-size:48px;padding:26px 0}.serv{grid-template-columns:250px 1fr}.serv dd{font-size:48px}.capa .sub{font-size:50px}.casa h2{font-size:96px}.casa .texto{font-size:50px}"
+    out = pauta_path.parent / ("imagens_reel" if reel else "imagens")
     out.mkdir(exist_ok=True)
     n = len(p["slides"])
     paths = []
     with sync_playwright() as pw:
         b = pw.chromium.launch()
-        pg = b.new_page(viewport={"width": 1080, "height": 1350})
+        pg = b.new_page(viewport={"width": 1080, "height": H})
         for i, s in enumerate(p["slides"], 1):
             pg.set_content(f"<html><head><meta charset='utf-8'><style>{css}</style></head>"
                            f"<body>{slide_html(s, editoria, i, n)}</body></html>")
@@ -158,5 +162,5 @@ def render(pauta_path):
 
 
 if __name__ == "__main__":
-    for path in render(sys.argv[1]):
+    for path in render(sys.argv[1], reel="--reel" in sys.argv):
         print(path)

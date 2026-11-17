@@ -1,0 +1,8 @@
+{"editoria": "roteiro", "assunto": "Roteiro de um sábado em Itaipava",
+ "fontes": ["https://www.viciadaemviajar.com/o-que-fazer-em-itaipava-rj-melhores-dicas-e-roteiro-pronto"],
+ "slides": [
+  {"tipo": "capa", "chapeu": "Roteiro pronto", "titulo": "Um sábado em Itaipava", "subtitulo": "Do mirante ao pôr do sol, sem correria"},
+  {"tipo": "lista", "titulo": "O <em>roteiro</em>", "itens": ["Manhã: Mirante do Cristo, na subida da serra", "Castelo de Itaipava, construído em 1920", "Almoço no centrinho", "Tarde: Feirinha de Itaipava, aberta até as 19h", "Pôr do sol no mirante da estrada para Teresópolis"]},
+  {"tipo": "texto", "titulo": "Antes de <em>ir</em>", "texto": "O Castelo fecha em dias de evento, então confirme antes. A Feirinha fica na BR-040, km 63, e tem estacionamento grátis."},
+  {"tipo": "casa", "foto": "fotos/28dba650.jpg", "titulo": "À noite, pizza no forno de casa", "texto": "Na Casa Onze, o jantar é sem fila: forno de pizza, churrasqueira e mesa para 10."}
+ ]}
