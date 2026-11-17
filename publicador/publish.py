@@ -179,20 +179,35 @@ def publish_post(post_dir):
             meta["story_erro"] = str(e)
             print(f"[{post_dir.name}] story ERRO: {e}", file=sys.stderr)
 
-    # Threads: espelha o post. Uma falha aqui fica registrada, mas não
-    # desfaz nem marca erro na publicação do Instagram.
-    try:
-        import threads
-        if threads.enabled():
-            res = threads.publish(post_dir, meta, raw_url)
-            meta.update(res)
-            meta.pop("threads_erro", None)
-            print(f"[{post_dir.name}] threads: {res.get('threads_link')}")
-    except Exception as e:  # noqa: BLE001
-        meta["threads_erro"] = str(e)
-        print(f"[{post_dir.name}] threads ERRO: {e}", file=sys.stderr)
+    notify(f"Publicado: {meta.get('titulo') or post_dir.name}",
+           (meta.get("legenda") or "").split("\n")[0][:180],
+           click=meta.get("link"),
+           image=raw_url(post_dir, (meta.get("imagens") or [meta.get("capa") or ""])[0]) if not meta.get("video") else None)
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return meta
+
+
+def notify(title, body, click=None, image=None, prioridade="default"):
+    """Aviso no celular pelo ntfy (app gratuito). Usa o tópico em NTFY_TOPIC.
+    Uma falha aqui nunca derruba a publicação."""
+    topic = os.environ.get("NTFY_TOPIC", "").strip()
+    if not topic and (ROOT / "config.json").is_file():
+        topic = json.loads((ROOT / "config.json").read_text(encoding="utf-8")).get("ntfy_topic", "")
+    if not topic:
+        return
+    payload = {"topic": topic, "title": title, "message": body or title,
+               "priority": {"min": 1, "low": 2, "default": 3, "high": 4, "max": 5}[prioridade],
+               "tags": ["house"]}
+    if click:
+        payload["click"] = click
+    if image:
+        payload["attach"] = image
+    try:
+        req = urllib.request.Request("https://ntfy.sh/", data=json.dumps(payload).encode("utf-8"),
+                                     headers={"Content-Type": "application/json"}, method="POST")
+        urllib.request.urlopen(req, timeout=20).read()
+    except Exception as e:  # noqa: BLE001
+        print(f"aviso ntfy falhou: {e}", file=sys.stderr)
 
 
 def due_posts(now):
@@ -223,6 +238,7 @@ def mark_error(post_dir, message):
     meta["status"] = "erro"
     meta["erro"] = message
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    notify(f"Erro ao publicar: {post_dir.name}", message[:300], prioridade="high")
 
 
 def main():
@@ -231,7 +247,14 @@ def main():
     g.add_argument("--due", action="store_true")
     g.add_argument("--post")
     g.add_argument("--check", action="store_true")
+    g.add_argument("--ping", action="store_true", help="manda um aviso de teste pelo ntfy")
     args = ap.parse_args()
+
+    if args.ping:
+        notify("Casa Onze: aviso de teste", "Se você está lendo isto, os avisos de postagem estão funcionando.",
+               click="https://www.instagram.com/casaonzeitaipava/")
+        print("Aviso de teste enviado.")
+        return
 
     if not TOKEN or not IG_USER:
         sys.exit("Faltam IG_ACCESS_TOKEN e/ou IG_USER_ID.")

@@ -1,14 +1,17 @@
 name: Publicar no Instagram
 
 on:
+  schedule:
+    # A cada 15 minutos publica os posts cujo horário já passou.
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       modo:
-        description: "check = testa a chave do Instagram · post = publica um post agora · due = publica os vencidos"
+        description: "check = testa a chave do Instagram · aviso = manda um aviso de teste · post = publica um post agora · due = publica os vencidos"
         required: true
         default: check
         type: choice
-        options: [check, post, due]
+        options: [check, aviso, post, due]
       post:
         description: "Pasta do post (só no modo post), ex.: posts/2026-11-18-agenda"
         required: false
@@ -38,6 +41,7 @@ jobs:
         run: |
           case "$MODO" in
             check) python publicador/publish.py --check ;;
+            aviso) python publicador/publish.py --ping ;;
             post)  test -n "$POST" || { echo "Informe a pasta do post."; exit 1; }
                    python publicador/publish.py --post "$POST" ;;
             due)   python publicador/publish.py --due ;;

@@ -1,0 +1,11 @@
+{
+  "editoria": "agenda",
+  "assunto": "Itaipava World Jazz Fest 2026",
+  "fontes": ["https://diariodorio.com/agenda/2026/11/10/itaipava-recebe-festival-internacional-de-jazz-com-musicos-de-oito-paises-e-ingressos-a-partir-de-rs-30.html"],
+  "slides": [
+    {"tipo": "capa", "chapeu": "Até 5 de dezembro", "titulo": "Itaipava World Jazz Fest", "subtitulo": "Músicos de oito países no Soberano Jazz Club, com ingressos a partir de R$ 30"},
+    {"tipo": "lista", "titulo": "Quem <em>toca</em>", "itens": ["Guinga e Marcel Powell", "Victor Biglione", "Bianca Gismonti", "Francesca Tandoi", "Josee Koning e Leo Amuedo", "Baptiste Herbin e Minino Garay"]},
+    {"tipo": "servico", "titulo": "Para <em>ir</em>", "linhas": [["Quando", "Até 5/12. Quinta às 20h, sexta e sábado às 21h"], ["Onde", "Soberano Jazz Club, Shopping Estação Locanda, Itaipava"], ["Quanto", "De R$ 30 a R$ 240, com desconto para quem compra antes e para moradores do RJ"], ["Ingressos", "Sympla ou bilheteria, de quinta a sábado, a partir das 17h"]]},
+    {"tipo": "casa", "foto": "fotos/IMG_7439.jpg", "titulo": "Depois do show, a serra é sua", "texto": "Casa para até 10 pessoas em Itaipava, com piscina, área gourmet e jardim aceso à noite."}
+  ]
+}
