@@ -1,0 +1,10 @@
+{"editoria": "agenda", "assunto": "7º Festival de Cerâmica de Petrópolis, no Shopping Vilarejo, em Itaipava",
+ "fontes": ["https://soupetropolis.com/2026/11/17/com-oficinas-demonstracao-e-venda-festival-de-ceramica-de-petropolis-comeca-nesta-sexta",
+            "https://tribunadepetropolis.com.br/noticias/feira-de-ceramica-de-petropolis-se-transforma-em-festival-e-amplia-intercambio-artistico/"],
+ "slides": [
+  {"tipo": "capa", "chapeu": "20 a 22 de novembro · grátis", "titulo": "Cerâmica em Itaipava", "subtitulo": "Festival com cerca de 40 ceramistas no Shopping Vilarejo"},
+  {"tipo": "texto", "titulo": "A feira virou <em>festival</em>", "texto": "Desde 2017, ceramistas de Petrópolis se reúnem para expor e vender. Na 7ª edição, chegam oficinas, demonstrações e rodas de conversa, com artistas de Petrópolis e do Rio."},
+  {"tipo": "lista", "titulo": "Mãos no <em>barro</em>", "itens": ["Sexta, 14h: oficina de barrogravura", "Sábado, 11h: oficina infantil com marcas da natureza", "Sábado, 14h: oficina de torno", "Domingo, 11h: enfeites de Natal em esgrafito", "Domingo, 14h30: samba e choro com o Grupo Taruíra"]},
+  {"tipo": "servico", "titulo": "<em>Serviço</em>", "linhas": [["Quando", "20 a 22/11, das 10h às 19h"], ["Onde", "Shopping Vilarejo, Estr. União e Indústria, 10.035, Itaipava"], ["Quanto", "Entrada gratuita"], ["Mais", "@festivaldeceramicadepetropolis"]]},
+  {"tipo": "casa", "foto": "fotos/IMG_2696.jpg", "titulo": "A peça nova vai direto para a mesa", "texto": "Volte da feira e estreie a compra no jantar da Casa Onze, com mesa para 10."}
+ ]}
