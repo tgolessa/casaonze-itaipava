@@ -1,5 +1,5 @@
 {
-  "status": "aprovado",
+  "status": "enviado_para_teste",
   "teste": true,
   "titulo": "Um sábado em Itaipava",
   "publicar_em": "2026-11-18T21:15:42-03:00",
@@ -12,5 +12,7 @@
       "media_id": "18121944317062452",
       "resultado": "alcance zero, apagado em 2026-11-18"
     }
-  ]
+  ],
+  "enviado_em": "2026-11-19T00:17:25.832257+00:00",
+  "link_video": "https://raw.githubusercontent.com/tgolessa/casaonze-itaipava/main/posts/teste-c-sabado-em-itaipava/reel.mp4"
 }

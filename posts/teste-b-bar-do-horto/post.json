@@ -1,5 +1,5 @@
 {
-  "status": "aprovado",
+  "status": "enviado_para_teste",
   "teste": true,
   "titulo": "Bar do Horto",
   "publicar_em": "2026-11-18T21:15:42-03:00",
@@ -12,5 +12,7 @@
       "media_id": "17880169509634391",
       "resultado": "alcance zero, apagado em 2026-11-18"
     }
-  ]
+  ],
+  "enviado_em": "2026-11-19T00:17:25.658473+00:00",
+  "link_video": "https://raw.githubusercontent.com/tgolessa/casaonze-itaipava/main/posts/teste-b-bar-do-horto/reel.mp4"
 }
