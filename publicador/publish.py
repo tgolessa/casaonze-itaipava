@@ -102,6 +102,21 @@ def publish_post(post_dir):
         meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"[{post_dir.name}] newsletter agendada no Kit: {meta.get('link')}")
         return meta
+    if meta.get("teste"):
+        # Reels de teste não passam pela API (lá eles não recebem distribuição).
+        # O vídeo e a legenda vão para o celular do Tiago, que publica como
+        # "Reel de teste" pelo app do Instagram.
+        video = raw_url(post_dir, meta["video"])
+        notify(f"Reel de teste pronto: {meta.get('titulo') or post_dir.name}",
+               "Toque para baixar o vídeo e publique pelo app como Reel de teste (Compartilhar com: Não seguidores). "
+               "Legenda:\n\n" + meta["legenda"],
+               click=video, image=video)
+        meta.update({"status": "enviado_para_teste", "enviado_em": dt.datetime.now(dt.timezone.utc).isoformat(),
+                     "link_video": video})
+        meta.pop("erro", None)
+        meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"[{post_dir.name}] reel de teste enviado ao celular: {video}")
+        return meta
     caption = meta["legenda"]
 
     if meta.get("video"):
@@ -305,14 +320,18 @@ def main():
     if not posts:
         print("Nenhum post aprovado com horário vencido.")
         return
-    # Newsletters não disputam espaço no feed: saem todas, sem intervalo.
-    for post_dir in [p for p in posts if json.loads((p / "post.json").read_text(encoding="utf-8")).get("tipo") == "newsletter"]:
+    # Newsletters e Reels de teste (enviados ao celular) não disputam espaço no
+    # feed: saem todos, sem intervalo.
+    def fora_do_feed(p):
+        m = json.loads((p / "post.json").read_text(encoding="utf-8"))
+        return m.get("tipo") == "newsletter" or bool(m.get("teste"))
+    for post_dir in [p for p in posts if fora_do_feed(p)]:
         try:
             publish_post(post_dir)
         except Exception as e:  # noqa: BLE001
             print(f"[{post_dir.name}] ERRO: {e}", file=sys.stderr)
             mark_error(post_dir, str(e))
-    posts = [p for p in posts if json.loads((p / "post.json").read_text(encoding="utf-8")).get("tipo") != "newsletter"]
+    posts = [p for p in posts if not fora_do_feed(p)]
     if not posts:
         return
     # Um post por rodada, e só se o último post da conta (inclusive manual)

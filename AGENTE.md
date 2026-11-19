@@ -86,7 +86,7 @@ Renderize: `python templates/render.py posts/<pasta>/pauta.json` e **abra as ima
 
 **Estilo:** português do Brasil, tom de anfitrião que conhece a região. Frases diretas. Nada de clichês de IA ("descubra", "mergulhe", "imperdível", "experiência única", "não perca"), nada de travessões, exclamações em série ou listas de adjetivos.
 
-**Reel (quando fizer):** `python templates/render.py posts/<pasta>/pauta.json --reel` e depois `python templates/reel.py posts/<pasta>`. Todo Reel sai com trilha instrumental própria (pasta `audio/`, escolhida pela editoria ou pelo campo `"trilha"` do pauta.json: `manha`, `tarde`, `noite`, `festa`). Nunca publique Reel sem trilha. No post.json do Reel: `"video": "reel.mp4"`, `"capa": "reel_capa.jpg"` e, se for teste, `"teste": true`.
+**Reel (quando fizer):** `python templates/render.py posts/<pasta>/pauta.json --reel` e depois `python templates/reel.py posts/<pasta>`. Todo Reel sai com trilha instrumental própria (pasta `audio/`, escolhida pela editoria ou pelo campo `"trilha"` do pauta.json: `manha`, `tarde`, `noite`, `festa`). Nunca publique Reel sem trilha. No post.json do Reel: `"video": "reel.mp4"`, `"capa": "reel_capa.jpg"` e, se for teste, `"teste": true`. Reel de teste **não** é publicado pela API (lá ele não recebe distribuição): no horário marcado, o publicador manda o vídeo e a legenda para o celular do Tiago pelo ntfy, e ele publica como teste pelo app.
 
 **Imagens de terceiros:** não use fotos de eventos, restaurantes ou pessoas tiradas da internet. As artes são tipográficas, e a única foto é a da Casa Onze.
 
