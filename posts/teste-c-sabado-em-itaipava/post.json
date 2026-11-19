@@ -1,8 +1,8 @@
 {
-  "status": "enviado_para_teste",
+  "status": "aprovado",
   "teste": true,
   "titulo": "Um sábado em Itaipava",
-  "publicar_em": "2026-11-18T21:15:42-03:00",
+  "publicar_em": "2026-11-18T21:19:18-03:00",
   "video": "reel.mp4",
   "capa": "reel_capa.jpg",
   "legenda": "Roteiro pronto para um sábado em Itaipava.\n\nMirante do Cristo, Castelo de Itaipava, almoço no centrinho, Feirinha e pôr do sol na estrada para Teresópolis. Salva para a próxima subida.\n\nA Casa Onze recebe a sua família.\n📍 Itaipava, Petrópolis · Reservas pelo link da bio\n\n#itaipava #petropolis #roteiro #serrafluminense",
@@ -13,6 +13,5 @@
       "resultado": "alcance zero, apagado em 2026-11-18"
     }
   ],
-  "enviado_em": "2026-11-19T00:17:25.832257+00:00",
-  "link_video": "https://raw.githubusercontent.com/tgolessa/casaonze-itaipava/main/posts/teste-c-sabado-em-itaipava/reel.mp4"
+  "musica": "MPB leve de estrada, como 'Anunciação' (Alceu Valença) ou 'Velha Infância' (Tribalistas)"
 }

@@ -109,7 +109,8 @@ def publish_post(post_dir):
         video = raw_url(post_dir, meta["video"])
         notify(f"Reel de teste pronto: {meta.get('titulo') or post_dir.name}",
                "Toque para baixar o vídeo e publique pelo app como Reel de teste (Compartilhar com: Não seguidores). "
-               "Legenda:\n\n" + meta["legenda"],
+               + (f"\n\nMúsica sugerida: {meta['musica']}" if meta.get("musica") else "")
+               + "\n\nLegenda:\n\n" + meta["legenda"],
                click=video, image=video)
         meta.update({"status": "enviado_para_teste", "enviado_em": dt.datetime.now(dt.timezone.utc).isoformat(),
                      "link_video": video})

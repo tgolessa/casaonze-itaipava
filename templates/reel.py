@@ -48,6 +48,11 @@ def build(post_dir):
     if pauta.is_file():
         p = json.loads(pauta.read_text(encoding="utf-8"))
         trilha = p.get("trilha") or TRILHA_POR_EDITORIA.get(p.get("editoria"))
+    # Reel de teste vai sem trilha: o Tiago escolhe a música na biblioteca do
+    # Instagram na hora de publicar pelo app.
+    post_json = post_dir / "post.json"
+    if post_json.is_file() and json.loads(post_json.read_text(encoding="utf-8")).get("teste"):
+        trilha = None
     audio = ROOT / "audio" / f"{trilha}.m4a" if trilha else None
     if audio and audio.is_file():
         total = sum(durs) - FADE * (len(frames) - 1)
