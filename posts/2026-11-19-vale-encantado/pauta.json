@@ -1,0 +1,13 @@
+{"editoria": "agenda", "assunto": "Vale Encantado de Petrópolis, circuito de luzes de Natal no Bosque Quitandinha",
+ "fontes": ["https://soupetropolis.com/2026/11/17/vale-encantado-estreia-nesta-quinta-em-petropolis-com-espetaculo-de-luzes-neve-artificial-e-atracoes-para-toda-a-familia",
+            "https://tribunadepetropolis.com.br/noticias/vale-encantado-estreia-nesta-quinta-em-petropolis-com-espetaculo-de-luzes-neve-artificial-e-atracoes-para-toda-a-familia/",
+            "https://aconteceempetropolis.com.br/2026/11/17/vale-encantado-vai-funcionar-em-novo-endereco-neste-ano/",
+            "https://abihrj.com.br/noticias/vale-encantado-petropolis-natal-2026-bosque-quitandinha",
+            "https://www.sympla.com.br/evento/vale-encantado-petropolis/3633779"],
+ "slides": [
+  {"tipo": "capa", "chapeu": "Abre hoje · até 10 de janeiro", "titulo": "O Natal acendeu", "subtitulo": "Vale Encantado de Petrópolis, agora no Bosque Quitandinha"},
+  {"tipo": "texto", "titulo": "Endereço <em>novo</em>", "texto": "Depois de duas temporadas em frente ao Palácio de Cristal, o circuito de luzes muda para o bosque ao lado do Palácio Quitandinha, de frente para o lago."},
+  {"tipo": "lista", "titulo": "O que tem no <em>caminho</em>", "itens": ["Show de acendimento às 19h", "Túnel de luz em LED", "Moinho iluminado, novidade do ano", "Árvore da Vida", "Show de neve artificial"]},
+  {"tipo": "servico", "titulo": "Para <em>ir</em>", "linhas": [["Quando", "Datas selecionadas de 19/11 a 10/1, das 18h à meia-noite"], ["Onde", "Bosque Quitandinha, Av. República do Líbano, 170, Petrópolis"], ["Ingressos", "Sympla, por data. Algumas já esgotaram"], ["Mais", "@valeencantadopetropolis"]]},
+  {"tipo": "casa", "foto": "fotos/IMG_1729.jpg", "titulo": "Na volta, outras luzes", "texto": "Do Quitandinha a Itaipava é um pulo. A noite termina no jardim iluminado da Casa Onze."}
+ ]}
