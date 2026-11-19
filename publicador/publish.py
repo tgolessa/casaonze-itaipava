@@ -253,6 +253,7 @@ def main():
     g.add_argument("--post")
     g.add_argument("--check", action="store_true")
     g.add_argument("--ping", action="store_true", help="manda um aviso de teste pelo ntfy")
+    g.add_argument("--stats", action="store_true", help="mostra as métricas dos posts publicados")
     args = ap.parse_args()
 
     if args.ping:
@@ -269,6 +270,26 @@ def main():
         lim = graph("GET", f"{IG_USER}/content_publishing_limit", {"fields": "quota_usage,config"})
         print(f"Conta: @{me.get('username')} · posts: {me.get('media_count')}")
         print(f"Limite de publicação: {json.dumps(lim.get('data', lim), ensure_ascii=False)}")
+        return
+
+    if args.stats:
+        for pj in sorted(POSTS.glob("*/post.json")):
+            meta = json.loads(pj.read_text(encoding="utf-8"))
+            mid = meta.get("media_id")
+            if not mid:
+                continue
+            try:
+                info = graph("GET", mid, {"fields": "media_type,media_product_type,timestamp,like_count,comments_count,is_shared_to_feed"})
+            except GraphError as e:
+                info = {"erro": str(e)}
+            vals = {}
+            for metric in ["views", "reach", "saved", "shares", "total_interactions"]:
+                try:
+                    r = graph("GET", f"{mid}/insights", {"metric": metric})
+                    vals[metric] = r["data"][0]["values"][0]["value"]
+                except (GraphError, KeyError, IndexError) as e:
+                    vals[metric] = f"n/d ({str(e)[:90]})"
+            print(f"{pj.parent.name} | teste={bool(meta.get('teste'))} | {json.dumps(info, ensure_ascii=False)} | {json.dumps(vals, ensure_ascii=False)}")
         return
 
     if args.post:

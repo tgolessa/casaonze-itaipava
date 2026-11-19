@@ -11,7 +11,7 @@ on:
         required: true
         default: check
         type: choice
-        options: [check, aviso, post, due]
+        options: [check, aviso, metricas, post, due]
       post:
         description: "Pasta do post (só no modo post), ex.: posts/2026-11-18-agenda"
         required: false
@@ -42,6 +42,7 @@ jobs:
           case "$MODO" in
             check) python publicador/publish.py --check ;;
             aviso) python publicador/publish.py --ping ;;
+            metricas) python publicador/publish.py --stats ;;
             post)  test -n "$POST" || { echo "Informe a pasta do post."; exit 1; }
                    python publicador/publish.py --post "$POST" ;;
             due)   python publicador/publish.py --due ;;
