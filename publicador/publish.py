@@ -273,7 +273,7 @@ def main():
         return
 
     if args.stats:
-        for pj in sorted(POSTS.glob("*/post.json")):
+        for pj in sorted((ROOT / "posts").glob("*/post.json")):
             meta = json.loads(pj.read_text(encoding="utf-8"))
             mid = meta.get("media_id")
             if not mid:
