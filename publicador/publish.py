@@ -289,6 +289,23 @@ def main():
         return
 
     if args.stats:
+        # Tudo o que está na conta nos últimos 14 dias, inclusive o que foi
+        # publicado à mão pelo app (Reels de teste).
+        lim = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=14)
+        conta = graph("GET", f"{IG_USER}/media", {"fields": "id,caption,media_product_type,media_type,timestamp,permalink,like_count,comments_count", "limit": 50})
+        for m in conta.get("data", []):
+            if dt.datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z") < lim:
+                continue
+            vals = {}
+            for metric in ["views", "reach", "saved", "shares", "total_interactions"]:
+                try:
+                    r = graph("GET", f"{m['id']}/insights", {"metric": metric})
+                    vals[metric] = r["data"][0]["values"][0]["value"]
+                except (GraphError, KeyError, IndexError):
+                    vals[metric] = None
+            titulo = (m.get("caption") or "").split("\n")[0][:60]
+            print(f"CONTA | {m['timestamp'][:16]} | {m.get('media_product_type')} | {titulo} | {m.get('permalink')} | {json.dumps(vals)}")
+        return
         for pj in sorted((ROOT / "posts").glob("*/post.json")):
             meta = json.loads(pj.read_text(encoding="utf-8"))
             mid = meta.get("media_id")
