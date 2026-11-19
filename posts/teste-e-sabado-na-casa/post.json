@@ -1,10 +1,12 @@
 {
-  "status": "aprovado",
+  "status": "enviado_para_teste",
   "teste": true,
   "titulo": "Um sábado na Casa Onze",
   "publicar_em": "2026-11-18T21:19:18-03:00",
   "video": "reel.mp4",
   "capa": "reel_capa.jpg",
   "legenda": "E se ninguém sair de casa no sábado?\n\nCafé no deck, pizza no forno, piscina, pôr do sol na borda e mesa posta. Casa para até 10 pessoas em Itaipava.\n\nA Casa Onze recebe a sua família.\n📍 Itaipava, Petrópolis · Reservas pelo link da bio\n\n#itaipava #petropolis #casanaserra",
-  "musica": "MPB calma de fim de tarde, como 'Ainda Bem' (Marisa Monte) ou 'Você e Eu' (Toquinho/Vinicius)"
+  "musica": "MPB calma de fim de tarde, como 'Ainda Bem' (Marisa Monte) ou 'Você e Eu' (Toquinho/Vinicius)",
+  "enviado_em": "2026-11-19T00:21:01.923361+00:00",
+  "link_video": "https://raw.githubusercontent.com/tgolessa/casaonze-itaipava/main/posts/teste-e-sabado-na-casa/reel.mp4"
 }
