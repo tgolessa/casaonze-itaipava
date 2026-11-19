@@ -1,12 +1,16 @@
 {
-  "status": "publicado",
+  "status": "aprovado",
   "teste": true,
   "titulo": "Bar do Horto",
-  "publicar_em": "2026-11-17T20:00:00-03:00",
+  "publicar_em": "2026-11-18T21:15:42-03:00",
   "video": "reel.mp4",
   "capa": "reel_capa.jpg",
   "legenda": "Chope gelado e pastel feito na hora.\n\nO Bar do Horto, no Hortomercado de Itaipava, é o lugar para começar a noite na serra.\n\nA Casa Onze recebe a sua família.\n📍 Itaipava, Petrópolis · Reservas pelo link da bio\n\n#itaipava #petropolis #chope #pastel",
-  "media_id": "17880169509634391",
-  "link": "https://www.instagram.com/reel/Df3F6ZSFf1V/",
-  "publicado_em": "2026-11-17T23:18:09+0000"
+  "historico": [
+    {
+      "publicado_via_api": "https://www.instagram.com/reel/Df3F6ZSFf1V/",
+      "media_id": "17880169509634391",
+      "resultado": "alcance zero, apagado em 2026-11-18"
+    }
+  ]
 }

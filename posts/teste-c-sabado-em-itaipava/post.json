@@ -1,12 +1,16 @@
 {
-  "status": "publicado",
+  "status": "aprovado",
   "teste": true,
   "titulo": "Um sábado em Itaipava",
-  "publicar_em": "2026-11-18T11:30:00-03:00",
+  "publicar_em": "2026-11-18T21:15:42-03:00",
   "video": "reel.mp4",
   "capa": "reel_capa.jpg",
   "legenda": "Roteiro pronto para um sábado em Itaipava.\n\nMirante do Cristo, Castelo de Itaipava, almoço no centrinho, Feirinha e pôr do sol na estrada para Teresópolis. Salva para a próxima subida.\n\nA Casa Onze recebe a sua família.\n📍 Itaipava, Petrópolis · Reservas pelo link da bio\n\n#itaipava #petropolis #roteiro #serrafluminense",
-  "media_id": "18121944317062452",
-  "link": "https://www.instagram.com/reel/Df4x2TSD4y1/",
-  "publicado_em": "2026-11-18T15:01:25+0000"
+  "historico": [
+    {
+      "publicado_via_api": "https://www.instagram.com/reel/Df4x2TSD4y1/",
+      "media_id": "18121944317062452",
+      "resultado": "alcance zero, apagado em 2026-11-18"
+    }
+  ]
 }
