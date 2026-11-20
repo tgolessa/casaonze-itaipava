@@ -1,0 +1,10 @@
+{"editoria": "casa", "assunto": "A Casa Onze para um grupo de amigos: um canto para cada um",
+ "fontes": [],
+ "slides": [
+  {"tipo": "capa", "chapeu": "Para grupos de até 10", "titulo": "Dez amigos, uma casa", "subtitulo": "Cada um acha o seu canto na Casa Onze"},
+  {"tipo": "casa", "foto": "fotos/0a0671e1.jpg", "titulo": "Quem cozinha", "texto": "Forno de pizza e churrasqueira, de frente para a piscina."},
+  {"tipo": "casa", "foto": "fotos/37312B87.jpg", "titulo": "Quem tira o chope", "texto": "Tem chopeira. Sempre aparece um voluntário."},
+  {"tipo": "casa", "foto": "fotos/5dc1b46a.jpg", "titulo": "Quem só quer piscina", "texto": "Deck, espreguiçadeira e a mata em volta."},
+  {"tipo": "casa", "foto": "fotos/IMG_1521.jpg", "titulo": "Quem fica na varanda", "texto": "A serra inteira na frente e nenhuma pressa."},
+  {"tipo": "casa", "foto": "fotos/IMG_4797.jpg", "titulo": "E no fim, todo mundo na mesa", "texto": "Vinho, queijo e conversa até tarde."}
+ ]}
