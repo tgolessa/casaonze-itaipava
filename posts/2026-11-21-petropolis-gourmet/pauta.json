@@ -1,0 +1,14 @@
+{"editoria": "agenda", "assunto": "26ª edição do Petrópolis Gourmet, no Shopping Estação Locanda, em Itaipava, últimos dois dias",
+ "fontes": ["https://soupetropolis.com/2026/11/10/petropolis-gourmet-transforma-o-feriadao-de-novembro-em-quatro-dias-de-experiencias-gastronomicas-em-itaipava",
+            "https://tribunadepetropolis.com.br/noticias/entre-aromas-sabores-e-boas-historias-petropolis-gourmet-abre-sua-vigesima-sexta-edicao-em-itaipava/",
+            "https://aconteceempetropolis.com.br/2026/11/17/petropolis-gourmet-oferece-quatro-dias-de-experiencias-gastronomicas-em-itaipava/",
+            "https://auroracultural.com/noticias/gastronomia/petropolis-gourmet-recebe-desafio-de-chefs-e-oficinas-do-senac-rj/",
+            "https://soupetropolis.com/2026/11/20/33-eventos-para-curtir-neste-fim-de-semana-em-petropolis-2"],
+ "slides": [
+  {"tipo": "capa", "chapeu": "Hoje e amanhã · entrada gratuita", "titulo": "Itaipava à mesa", "subtitulo": "Petrópolis Gourmet chega ao fim de semana final na Estação Locanda"},
+  {"tipo": "texto", "titulo": "A <em>26ª</em> edição", "texto": "Restaurantes com cardápio especial, Prato Gourmet a R$ 45 e o Mercado Gourmet, com cerca de 20 produtores rurais e artesanais da serra."},
+  {"tipo": "lista", "titulo": "Sábado no <em>festival</em>", "itens": ["13h · Marcelo Buddy", "16h · Papai Noel", "19h · Tasting Bordeaux & Médoc, R$ 130", "20h · Rafa Savino"]},
+  {"tipo": "lista", "titulo": "Domingo no <em>festival</em>", "itens": ["13h · Aula show do chef Fred, vagas limitadas", "13h · Banda Arcade", "16h · Papai Noel", "18h · Encerramento"]},
+  {"tipo": "servico", "titulo": "Para <em>ir</em>", "linhas": [["Quando", "Sábado, das 10h às 22h. Domingo, das 10h às 18h"], ["Onde", "Shopping Estação Locanda, Estr. União e Indústria, 11000, Itaipava"], ["Quanto", "Entrada gratuita. Pratos e bebidas à parte"], ["Mais", "@petropolisgourmet"]]},
+  {"tipo": "casa", "foto": "fotos/IMG_4797.jpg", "titulo": "Leve o Mercado para casa", "texto": "Queijo e vinho da feira, mesa para 10 e a noite toda na Casa Onze."}
+ ]}
