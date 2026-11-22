@@ -1,0 +1,10 @@
+{"editoria": "agenda", "assunto": "Festival de Natal Germânico, no Paço Ipiranga, Centro de Petrópolis, 28 e 29 de novembro",
+ "fontes": ["https://www.petropolisemcena.com.br/2026/11/festival-de-natal-germanico-tera-musica.html"],
+ "slides": [
+  {"tipo": "capa", "chapeu": "28 e 29 de novembro · entrada gratuita", "titulo": "Natal com sotaque alemão", "subtitulo": "Festival de Natal Germânico no Paço Ipiranga, no Centro de Petrópolis"},
+  {"tipo": "texto", "titulo": "Feito por quem <em>dança</em>", "texto": "O festival é do Grupo de Danças Folclóricas Rheinland-Pfalz, que faz 32 anos. Tem cozinha alemã do Restaurante Schrader, cerveja artesanal da cidade e um mercado de Natal com expositores locais."},
+  {"tipo": "lista", "titulo": "Sábado, <em>13h às 21h</em>", "itens": ["Chopp a metro", "Danças típicas", "Banda marcial", "18h30 · Cortejo de lanternas e chegada do Papai Noel"]},
+  {"tipo": "lista", "titulo": "Domingo, <em>10h às 18h</em>", "itens": ["Contação de histórias", "Danças típicas", "Coral", "Chopp a metro"]},
+  {"tipo": "servico", "titulo": "Para <em>ir</em>", "linhas": [["Quando", "Sábado (28), das 13h às 21h. Domingo (29), das 10h às 18h"], ["Onde", "Paço Ipiranga, Av. Ipiranga, 494, Centro, Petrópolis"], ["Quanto", "Entrada gratuita. Comida e bebida à parte"], ["Mais", "@festivaldenatalgermanico"]]},
+  {"tipo": "casa", "foto": "fotos/IMG_2696.jpg", "titulo": "A ceia continua aqui", "texto": "Do mercado de Natal para a mesa de 10 lugares da Casa Onze, em Itaipava."}
+ ]}
