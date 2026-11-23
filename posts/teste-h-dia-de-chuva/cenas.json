@@ -1,0 +1,35 @@
+{
+ "gancho": "Choveu no feriado na serra? Aqui ninguém liga.",
+ "cenas": [
+  {
+   "foto": "fotos/0a0671e1.jpg",
+   "dur": 1.4,
+   "zoom": "in",
+   "texto": "Área gourmet coberta"
+  },
+  {
+   "foto": "fotos/65b0bd88.jpg",
+   "dur": 1.3,
+   "zoom": "out",
+   "texto": "Sofá pra turma toda"
+  },
+  {
+   "foto": "fotos/37312B87.jpg",
+   "dur": 1.3,
+   "zoom": "in",
+   "texto": "Chope tirado na hora"
+  },
+  {
+   "foto": "fotos/IMG_4797.jpg",
+   "dur": 1.3,
+   "zoom": "out",
+   "texto": "Jantar sem pressa"
+  },
+  {
+   "foto": "fotos/IMG_7439.jpg",
+   "dur": 1.8,
+   "zoom": "in",
+   "texto": "E quando abre, o jardim acende"
+  }
+ ]
+}
