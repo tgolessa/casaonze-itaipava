@@ -1,0 +1,9 @@
+{"editoria": "agenda", "assunto": "Caravana Iluminada da Coca-Cola percorre Petrópolis do Quitandinha ao Bingen no domingo, 29 de novembro, a partir das 19h",
+ "fontes": ["https://soupetropolis.com/2026/10/28/caravana-iluminada-da-coca-cola-percorre-as-ruas-de-petropolis-no-dia-29-de-novembro-2", "https://www.petropolisemcena.com.br/2026/11/caravana-iluminada-da-coca-cola.html", "https://aconteceempetropolis.com.br/2026/11/05/caravana-coca-cola-vai-passar-por-petropolis-no-final-de-novembro/", "https://soupetropolis.com/2026/11/23/agenda-da-semana-natal-imperial-caravana-da-coca-cola-e-mais-de-40-eventos-em-petropolis"],
+ "slides": [
+  {"tipo": "capa", "chapeu": "Domingo, 29 de novembro · 19h", "titulo": "Caminhões de luz na serra", "subtitulo": "A Caravana Iluminada da Coca-Cola atravessa Petrópolis, do Quitandinha ao Bingen"},
+  {"tipo": "texto", "titulo": "Na calçada, <em>de graça</em>", "texto": "Os caminhões iluminados passam pelas ruas com cenários de Natal e a música da campanha. É só escolher um ponto do trajeto e esperar com as crianças."},
+  {"tipo": "lista", "titulo": "Por onde <em>passa</em>", "itens": ["Saída no pórtico do Quitandinha", "Castelânea", "Alto da Serra", "Centro Histórico", "Chegada no Bingen"]},
+  {"tipo": "servico", "titulo": "Para <em>ver</em>", "linhas": [["Quando", "Domingo (29), a partir das 19h"], ["Onde", "Do Quitandinha ao Bingen, passando pelo Centro Histórico"], ["Quanto", "Gratuito"], ["Atenção", "O trajeto e o horário podem mudar. Confira o site oficial da Caravana antes de sair"]]},
+  {"tipo": "casa", "foto": "fotos/IMG_7439.jpg", "titulo": "Depois, as luzes do jardim", "texto": "Na volta para Itaipava, a noite continua no jardim da Casa Onze."}
+ ]}
