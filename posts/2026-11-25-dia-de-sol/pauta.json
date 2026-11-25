@@ -1,0 +1,10 @@
+{"editoria": "casa", "assunto": "Um dia de sol na Casa Onze, da manhã ao fim da tarde, com a chegada do verão na serra",
+ "fontes": [],
+ "slides": [
+  {"tipo": "capa", "chapeu": "O verão chegando à serra", "titulo": "Dia de sol na serra", "subtitulo": "Da primeira xícara de café ao último mergulho, sem sair da Casa Onze"},
+  {"tipo": "casa", "foto": "fotos/84c52380.jpg", "titulo": "O dia começa no deck", "texto": "Café na mão, a piscina ao lado e a mata acordando em volta."},
+  {"tipo": "casa", "foto": "fotos/c4839de4.jpg", "titulo": "A casa inteira de frente para a água", "texto": "A sala de vidro abre para a piscina. Quem fica dentro não perde ninguém de vista."},
+  {"tipo": "casa", "foto": "fotos/f657fad3.jpg", "titulo": "Espreguiçadeira na sombra", "texto": "As árvores fazem a sombra. O resto do dia é por sua conta."},
+  {"tipo": "casa", "foto": "fotos/28dba650.jpg", "titulo": "Almoço sem pegar o carro", "texto": "Forno de pizza e churrasqueira na área gourmet, a poucos passos da piscina."},
+  {"tipo": "casa", "foto": "fotos/8baedc19.jpg", "titulo": "A serra como paisagem", "texto": "Sol forte, ar fresco e montanha para todo lado. Na Casa Onze, o verão tem outro clima."}
+ ]}
