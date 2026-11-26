@@ -1,0 +1,9 @@
+{"editoria": "agenda", "assunto": "Multi Festival, com shows, degustações e workshops gratuitos no Shopping Vilarejo, em Itaipava, sábado e domingo, 28 e 29 de novembro",
+ "fontes": ["https://soupetropolis.com/2026/11/25/com-shows-degustacoes-e-workshops-multi-festival-acontece-neste-fim-de-semana-em-itaipava/"],
+ "slides": [
+  {"tipo": "capa", "chapeu": "28 e 29 de novembro · grátis", "titulo": "Festival no Vilarejo", "subtitulo": "Shows, degustações e workshops no fim de semana em Itaipava"},
+  {"tipo": "lista", "titulo": "Sábado, <em>28</em>", "itens": ["13h · Workshop de café", "14h · Workshop de queijos", "15h · Workshop de vinhos", "16h · River Raid, anos 80", "18h · Juliane Gamboa e Edgar Nyo", "20h · Marquinho O Sócio"]},
+  {"tipo": "lista", "titulo": "Domingo, <em>29</em>", "itens": ["13h · Workshop de cerveja", "14h · Fernanda Santanna e Will Magalhães", "16h · Blues Etílicos"]},
+  {"tipo": "servico", "titulo": "Para <em>ir</em>", "linhas": [["Quando", "Sábado e domingo, 28 e 29 de novembro, a partir das 13h"], ["Onde", "Shopping Vilarejo, Estr. União e Indústria, 10.035, Itaipava"], ["Quanto", "Entrada gratuita"], ["Mais", "@multifestivaloficial"]]},
+  {"tipo": "casa", "foto": "fotos/37312B87.jpg", "titulo": "Depois do blues, chope em casa", "texto": "Na volta, a noite continua na Casa Onze, que tem chopeira própria."}
+ ]}
