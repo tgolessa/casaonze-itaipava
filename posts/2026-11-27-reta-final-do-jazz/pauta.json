@@ -1,0 +1,25 @@
+{
+  "editoria": "agenda",
+  "assunto": "Reta final do Itaipava World Jazz Fest no Soberano Jazz Club: Bianca Gismonti (27/11), Manuel de Oliveira (28/11) e Francesca Tandoi (4 e 5/12)",
+  "fontes": [
+    "https://acontecenaserradorio.com.br/itaipava-world-jazz-fest-chega-a-terceira-semana-com-victor-biglione-bianca-gismonti-e-manuel-de-oliveira/",
+    "https://diariodorio.com/agenda/2026/11/10/itaipava-recebe-festival-internacional-de-jazz-com-musicos-de-oito-paises-e-ingressos-a-partir-de-rs-30.html"
+  ],
+  "slides": [
+    {"tipo": "capa", "chapeu": "Hoje às 21h · até 5/12", "titulo": "Reta final do jazz", "subtitulo": "Os quatro últimos shows do Itaipava World Jazz Fest, no Soberano Jazz Club"},
+    {"tipo": "lista", "titulo": "Quem <em>fecha</em> o festival", "itens": [
+      "Sex 27/11 · Bianca Gismonti Trio",
+      "Sáb 28/11 · Manuel de Oliveira, solo com loops",
+      "Sex 4/12 · Francesca Tandoi, jazz italiano",
+      "Sáb 5/12 · Francesca Tandoi, canções da Itália e do Brasil"
+    ]},
+    {"tipo": "texto", "titulo": "Do Brasil à <em>Itália</em>", "texto": "Bianca Gismonti abre o fim de semana com o trio. No sábado, o português Manuel de Oliveira toca sozinho, com guitarra, viola braguesa e loops ao vivo. A pianista italiana Francesca Tandoi encerra com dois shows, o último com bossa nova no repertório."},
+    {"tipo": "servico", "titulo": "Para <em>ir</em>", "linhas": [
+      ["Quando", "27 e 28/11 e 4 e 5/12, sempre às 21h"],
+      ["Onde", "Soberano Jazz Club, Shopping Estação Locanda, Estr. União e Indústria, 11.000"],
+      ["Quanto", "A partir de R$ 30 (27/11), R$ 40 (28/11) e R$ 60 (4 e 5/12)"],
+      ["Ingressos", "Sympla ou bilheteria, a partir das 17h. 18 anos"]
+    ]},
+    {"tipo": "casa", "foto": "fotos/65b0bd88.jpg", "titulo": "Depois do bis, a sala", "texto": "Na volta do show, a conversa continua na sala aberta para o deck da Casa Onze."}
+  ]
+}
