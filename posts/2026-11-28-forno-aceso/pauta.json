@@ -1,0 +1,10 @@
+{"editoria": "casa", "assunto": "Um sábado em volta da área gourmet da Casa Onze: forno de pizza, chopeira e mesa para dez",
+ "fontes": [],
+ "slides": [
+  {"tipo": "capa", "chapeu": "Sábado na Casa Onze", "titulo": "Forno aceso, mesa cheia", "subtitulo": "Um sábado inteiro em volta da área gourmet"},
+  {"tipo": "casa", "foto": "fotos/28dba650.jpg", "titulo": "O forno de pizza", "texto": "Fica na área gourmet, ao lado da churrasqueira. Cada um monta a sua."},
+  {"tipo": "casa", "foto": "fotos/37312B87.jpg", "titulo": "Chope tirado na hora", "texto": "A chopeira fica ali do lado, para ninguém sair de perto."},
+  {"tipo": "casa", "foto": "fotos/0a0671e1.jpg", "titulo": "De frente para a piscina", "texto": "Quem está no forno não perde a conversa do deck."},
+  {"tipo": "casa", "foto": "fotos/IMG_2696.jpg", "titulo": "Lugar para a turma toda", "texto": "Mesa posta para dez, com a pizza saindo direto do forno."},
+  {"tipo": "casa", "foto": "fotos/IMG_4797.jpg", "titulo": "Depois, a conversa", "texto": "Vinho, queijo e ninguém com pressa. Em Itaipava, o sábado rende."}
+ ]}
